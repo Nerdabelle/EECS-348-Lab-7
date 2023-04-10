@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <h1>EECS 348 Lab Seven Practice Three</h1>
+    <style>
+    /* Style the h1 tag */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Style the input fields */
+input[type="text"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 20px;
+ 
+}
+
+/* Style the button */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Style the button when hovering over it */
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Center the button */
+button {
+  display: block;
+  margin: 0 auto;
+}
+body{
+  background-color: #fa7deb;
+}
+</style>
+</head>
+
+<body>
+    First Password: <input type="text" id="pass1" value=""> <br>
+    Second Password: <input type="text" id="pass2" value=""> <br>
+
+    <script type="text/javascript">
+    function validate() {
+    var pass1 = document.getElementById("pass1").value;
+    var pass2 = document.getElementById("pass2").value;
+
+
+    if (pass1.length < 8) {
+        alert("The length of the first password is less than 8 letters!")
+    } else if (pass2.length < 8) {
+        alert("The length of the second password is less than 8 letters!")
+    } else if (pass1 != pass2) {
+        alert("The passwords don't match!")
+    } else {
+        alert("All good!")
+    }
+}
+
+    </script>
+    <button onclick="validate()">Validate Your Passwords</button> <br>
+
+<p1>Please follow these links to visit other practices.</p1><br>
+          <a href="index.html">Index</a> <br>
+          <a href="practice1.html">Practice1</a> <br>
+          <a href="practice2.html">Practice2</a> <br>
+          <a href="practice4.html">Practice4</a> <br>
+
+</body>
+
+
+</html>
